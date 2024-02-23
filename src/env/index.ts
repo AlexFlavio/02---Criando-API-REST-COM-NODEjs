@@ -7,8 +7,6 @@ if (process.env.NODE_ENV === 'test') {
   config()
 }
 
-console.log(process.env.NODE_ENV)
-
 const envSchema = z.object({
   NODE_ENV: z
     .enum(['development', 'test', 'production'])
